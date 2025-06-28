@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: mcp-server-deepdive-deployment
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.9.0
+
+# Installation Steps
+
+To install the `add_tool` MCP server, run the following command:
+
+```json
+{
+  "mcpServers": {
+    "add_tool": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/henryhabib/mcpserverexample.git",
+        "mcp-server"
+      ]
+    }
+  }
+}
+```
+
+This will fetch and set up the `mcp-server` from the specified GitHub repository.
